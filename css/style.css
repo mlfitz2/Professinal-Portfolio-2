@@ -20,7 +20,7 @@ main {
     padding: 5%;
     border-radius: 30px;
     height: 90vh;
-    width: 60vw;
+    width: 75vw;
     text-align: center;
     font-family: 'Poiret One', serif;
 }
@@ -30,6 +30,11 @@ h1 {
     padding: 10%;
     color: var(--light-grey);
     font-weight: 900;
+}
+
+h3 {
+    font-size: 2.5em;
+    padding-bottom: 3%;
 }
 
 .about-me {
@@ -47,7 +52,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 65vh;
+    height: 75vh;
 }
 
 .nav-btn {
@@ -86,15 +91,69 @@ nav {
     }
 }
 
-.hidden {
-    display: none;
+#contact-me {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+#links-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 75%;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    width: 40%;
+    height: 30%;
+    margin: 2%;
+    font-size: 1.5em;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.phone {
+    cursor:text;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+    color: var(--dark-grey);  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 4em;
+    color: var(--dark-grey);
+}
+
 
 .selected {
     background-color: var(--forest-green);
     color: var(--light-grey);
 }
 
+.hidden {
+    display: none !important;
+}
 
 
 
@@ -110,7 +169,7 @@ nav {
     nav {
         flex-direction: row;
         height: auto;
-        width: 65vw;
+        width: 75vw;
         justify-content: space-evenly;
     }
 
@@ -144,4 +203,12 @@ nav {
     .about-me {
         font-size:1.52em;
     }
+
+    .contact-item {
+        font-size: 1em;
+        width: 75%;
+        height: 15%;
+    }
+
+
 }
