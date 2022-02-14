@@ -1,0 +1,147 @@
+:root {
+    --light-grey: #ececec;
+    --dark-grey: #383838;
+    --forest-green: #137217;
+}
+
+body {
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--forest-green);
+    color: var(--light-grey);
+    padding: 5%;
+    border-radius: 30px;
+    height: 90vh;
+    width: 60vw;
+    text-align: center;
+    font-family: 'Poiret One', serif;
+}
+
+h1 {
+    font-size: 4em;
+    padding: 10%;
+    color: var(--light-grey);
+    font-weight: 900;
+}
+
+.about-me {
+    font-size: 2em;
+    padding-bottom: 3%;
+}
+
+#avatar {
+    width: 90%;
+    border: solid 10px var(--dark-grey);
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
+}
+
+.nav-btn {
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 3%;
+    font-family: 'Poiret One', serif;
+    box-shadow: 0000 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+/* Buttons pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    background-color: var(--forest-green);
+    color: var(--light-grey);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 808px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: row;
+        height: auto;
+        width: 65vw;
+        justify-content: space-evenly;
+    }
+
+    #mobile-nav-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    #nav1 {
+        width: 100%;
+    }
+
+    .nav-btn {
+        height: 10vh;
+        width: 10vh;
+        font-size: 1em;
+        padding: .5%;
+    }
+
+    main {
+        height: 75vh;
+        width: 90vw;
+    }
+
+    #avatar {
+        width: 70%;
+    }
+
+    .about-me {
+        font-size:1.52em;
+    }
+}

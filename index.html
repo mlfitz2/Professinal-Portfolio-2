@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Fitzpatrick</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Buttons are on either side of main area on desktop, or all at top in mobile view -->
+    <div id="mobile-nav-area">
+        <nav id="nav1">
+            <h2 class="nav-btn" id="about-me-btn">About Me</h2>
+            <h2 class="nav-btn" id="portfolio-btn">My Portfolio</h2>
+        </nav>
+    </div>
+
+    <!-- Main area where info is displayed dynamically -->
+    <main>
+
+        <!-- Introduction text -->
+        <section id="intro" class="">
+            <h1>Hi there!</h1>
+            <img id="avatar" src="assets/avatar-grey.jpg">
+            <h1>I'm Mike.</h1>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="hidden">
+            <p class="about-me">I'm a programmer based in Seattle, WA. I create responsive websites that look and function great across all platforms. I'm currently working as an IT Recruiter, and through this role fell in love with coding and all things tech. Now I'm looking to apply my skills full-time as a Web Developer!</p>
+            <p class="about-me">When I'm not busy coding, I like to keep busy with reading, running, yoga, meditation, exploring the amazing sights of the Pacific Northwest with my husband, and playing with our eccentric cat.</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="my-portfolio" class="hidden">
+        </section>
+
+        <!-- Contact Info Section -->
+        <section id="contact-me" class="hidden">
+        </section>
+
+        <!-- Resume Section -->
+        <section id="my-resume" class="hidden">
+        </section>
+       
+    </main>
+
+    <!-- Right-side navbar on desktop (joined with Nav1 at the top in mobile view) -->
+    <nav id="nav2">
+        <h2 class="nav-btn" id="contact-me-btn">Contact Me</h2>
+        <h2 class="nav-btn" id="resume-btn">My Resume</h2>
+    </nav>
+    
+    <script src="./js/script.js"></script>    
+</body>
+</html>
