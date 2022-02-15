@@ -6,12 +6,18 @@ const myPortfolio = document.getElementById('my-portfolio');
 const contactMe = document.getElementById('contact-me');
 const intro = document.getElementById('intro');
 
+const backBtn = document.querySelector('.back-btn')
+const pubCrawlerBtn = document.getElementById('pubcrawler');
+const pubCrawler = document.getElementById('pubcrawler-page');
+const projectPage = document.querySelector('.project-page');
+
 //Renders About Me section
 function showAboutMe() {
     intro.setAttribute('class', 'hidden');
     myPortfolio.setAttribute('class', 'hidden');
     contactMe.setAttribute('class', 'hidden');
     aboutMe.removeAttribute('class', 'hidden');
+    projectPage.setAttribute('class', 'hidden');
     
     aboutMeBtn.setAttribute('class', 'nav-btn selected');
     myPortfolioBtn.setAttribute('class', 'nav-btn');
@@ -23,6 +29,7 @@ function showMyPortfolio() {
     myPortfolio.removeAttribute('class', 'hidden');
     contactMe.setAttribute('class', 'hidden');
     aboutMe.setAttribute('class', 'hidden');
+    projectPage.setAttribute('class', 'hidden');
 
     aboutMeBtn.setAttribute('class', 'nav-btn');
     myPortfolioBtn.setAttribute('class', 'nav-btn selected');
@@ -35,10 +42,24 @@ function showContactMe() {
     myPortfolio.setAttribute('class', 'hidden');
     contactMe.removeAttribute('class', 'hidden');
     aboutMe.setAttribute('class', 'hidden');
+    projectPage.setAttribute('class', 'hidden');
     
     aboutMeBtn.setAttribute('class', 'nav-btn');
     myPortfolioBtn.setAttribute('class', 'nav-btn');
     contactMeBtn.setAttribute('class', 'nav-btn selected');
+}
+
+//Return to portfolio
+function backToPortfolio() {
+    projectPage.setAttribute('class', 'hidden');
+    myPortfolio.removeAttribute('class', 'hidden');
+
+}
+
+//Renders PubCrawler page
+function showPubCrawler() {
+    myPortfolio.setAttribute('class', 'hidden');
+    pubCrawler.removeAttribute('class', 'hidden');
 }
 
 
@@ -55,4 +76,14 @@ myPortfolioBtn.addEventListener('click', function() {
 //Event listener: Contact Me section
 contactMeBtn.addEventListener('click', function(){
     showContactMe();
+})
+
+//Event listener: go back to portfolio from project page
+backBtn.addEventListener('click', function() {
+    backToPortfolio();
+})
+
+//Event listener: show pubcrawler page
+pubCrawlerBtn.addEventListener('click', function() {
+    showPubCrawler();
 })

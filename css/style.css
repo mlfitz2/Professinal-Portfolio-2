@@ -20,7 +20,7 @@ main {
     padding: 5%;
     border-radius: 30px;
     height: 90vh;
-    width: 75vw;
+    width: 80vw;
     text-align: center;
     font-family: 'Poiret One', serif;
 }
@@ -38,7 +38,7 @@ h3 {
 }
 
 
-.about-me {
+p {
     font-size: 2em;
     padding-bottom: 3%;
 }
@@ -168,8 +168,8 @@ a:visited, a:link {
 h4 {
     font-size: 2em;
     padding: 3%;
-    background-color: var(--light-grey);
-    color: var(--dark-grey);
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +178,48 @@ h4 {
 
 .portfolio-pic {
     width: 100%;
+    margin-bottom: 1%;
 }
+
+
+/* Individual project's page */
+.project-demo-area {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-links-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project-link {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    border-radius: 25px;
+    font-size: 1.8em;
+    padding: 8%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.back-btn {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+    font-weight: 900;
+}
+
+.project-demo-pic {
+    width: 30%;
+}
+
 
 .selected {
     background-color: var(--forest-green);
@@ -230,6 +271,10 @@ h4 {
         width: 90vw;
     }
 
+    p {
+        font-size: 1.5em;
+    }
+
     #avatar {
         width: 70%;
     }
@@ -241,6 +286,36 @@ h4 {
     h4 {
         font-size: 1.2em;
         min-height: 5vh;
+    }
+    
+    .project-demo-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-link {
+        font-size: 1.2em;
+        padding: 5%;
+        margin: 1%;
+    }
+
+    .project-demo-pic {
+        width: 50%;
+    }
+
+    .project-links-area {
+        flex-direction: row;
+    }
+
+
+}
+
+@media screen and (max-width: 408px) {
+    h4 {
+        font-size: 1em;
+    }
+
+    .portfolio-pic {
+        height: 10vh;
     }
 
 }
