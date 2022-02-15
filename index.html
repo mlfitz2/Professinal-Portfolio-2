@@ -14,14 +14,12 @@
 </head>
 <body>
     
-    <!-- Buttons are on either side of main area on desktop, or all at top in mobile view -->
-    <div id="mobile-nav-area">
+    <!-- Navbar -->
         <nav id="nav">
             <h2 class="nav-btn" id="about-me-btn">About Me</h2>
             <h2 class="nav-btn" id="portfolio-btn">My Portfolio</h2>
             <h2 class="nav-btn" id="contact-me-btn">Contact Me</h2>
         </nav>
-    </div>
 
     <!-- Main area where info is displayed dynamically -->
     <main>
@@ -40,9 +38,32 @@
             <p class="about-me">When I'm not busy coding, I like to keep busy with reading, running, yoga, meditation, exploring the amazing sights of the Pacific Northwest with my husband, and playing with our eccentric cat.</p>
         </section>
 
-        <!-- Portfolio Section -->
+        <!-- Portfolio main page -->
         <section id="my-portfolio" class="hidden">
+            <h3>Here are some cool projects I've made!</h3>
+            <p class="about-me">Click on a project for more info.</p>
+            
+            <div class="portfolio-display">
+                <div class="project-card">
+                    <h4>PubCrawler</h4>
+                    <img id="pubcrawler-pic" class="portfolio-pic" src="assets/pubcrawler.JPG">
+                </div>
+                <div class="project-card">
+                    <h4>Interactive Quiz</h4>
+                    <img id="js-quiz-pic" class="portfolio-pic" src="assets/js-quiz.JPG">
+                </div>
+                <div class="project-card">
+                    <h4>Workday Planner</h4>
+                    <img id="planner-pic" class="portfolio-pic" src="assets/planner.JPG">
+                </div>
+            </div>
         </section>
+
+
+
+
+
+
 
         <!-- Contact Info Section -->
         <section id="contact-me" class="hidden">

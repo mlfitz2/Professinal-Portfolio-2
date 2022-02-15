@@ -18,6 +18,17 @@ function showAboutMe() {
     contactMeBtn.setAttribute('class', 'nav-btn');
 }
 
+function showMyPortfolio() {
+    intro.setAttribute('class', 'hidden');
+    myPortfolio.removeAttribute('class', 'hidden');
+    contactMe.setAttribute('class', 'hidden');
+    aboutMe.setAttribute('class', 'hidden');
+
+    aboutMeBtn.setAttribute('class', 'nav-btn');
+    myPortfolioBtn.setAttribute('class', 'nav-btn selected');
+    contactMeBtn.setAttribute('class', 'nav-btn');
+}
+
 //Renders Contact Me section
 function showContactMe() {
     intro.setAttribute('class', 'hidden');
@@ -30,10 +41,16 @@ function showContactMe() {
     contactMeBtn.setAttribute('class', 'nav-btn selected');
 }
 
+
 //Event listener: About Me section
 aboutMeBtn.addEventListener('click', function() {
     showAboutMe();
 });
+
+//Event listener: Portfolio section
+myPortfolioBtn.addEventListener('click', function() {
+    showMyPortfolio();
+})
 
 //Event listener: Contact Me section
 contactMeBtn.addEventListener('click', function(){

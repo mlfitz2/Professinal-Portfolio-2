@@ -37,6 +37,7 @@ h3 {
     padding-bottom: 3%;
 }
 
+
 .about-me {
     font-size: 2em;
     padding-bottom: 3%;
@@ -124,6 +125,7 @@ nav {
     font-size: 1.5em;
     border-radius: 35px;
     cursor: pointer;
+    font-weight: 900;
 }
 
 .phone {
@@ -145,6 +147,38 @@ a:visited, a:link {
     color: var(--dark-grey);
 }
 
+.portfolio-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 157px;
+    margin: 1%;
+    text-align: center;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 2em;
+    padding: 3%;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.portfolio-pic {
+    width: 100%;
+}
 
 .selected {
     background-color: var(--forest-green);
@@ -201,14 +235,12 @@ a:visited, a:link {
     }
 
     .about-me {
-        font-size:1.52em;
+        font-size:1.2em;
     }
 
-    .contact-item {
-        font-size: 1em;
-        width: 75%;
-        height: 15%;
+    h4 {
+        font-size: 1.2em;
+        min-height: 5vh;
     }
-
 
 }
