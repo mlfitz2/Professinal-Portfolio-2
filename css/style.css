@@ -210,16 +210,9 @@ h4 {
     font-weight: 900;
 }
 
-.back-btn {
-    background-color: var(--dark-grey);
-    color: var(--light-grey);
-    font-weight: 900;
-}
-
 .project-demo-pic {
     width: 30%;
 }
-
 
 .selected {
     background-color: var(--forest-green);
@@ -296,6 +289,7 @@ h4 {
         font-size: 1.2em;
         padding: 5%;
         margin: 1%;
+        height: 8vh !important;
     }
 
     .project-demo-pic {
